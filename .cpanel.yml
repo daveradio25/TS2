@@ -1,0 +1,23 @@
+---
+deployment:
+  tasks:
+    # Define the deployment path - replace 'yourusername' with your actual cPanel username
+    - export DEPLOYPATH=/home/bwabokzf/public_html/time/
+    
+    # Create the destination directory if it doesn't exist
+    - /bin/mkdir -p $DEPLOYPATH
+    
+    # Deploy all files from the out directory (created by next build)
+    # First build the project - note: might need to install dependencies if using push deployment
+    - export NODE_ENV=production
+    - /usr/local/bin/npm install --production
+    - /usr/local/bin/npm run build
+    
+    # Copy all files from the out directory to the deployment path
+    - /bin/cp -R ./out/* $DEPLOYPATH
+    
+    # Copy other necessary files
+    - /bin/cp .htaccess $DEPLOYPATH 2>/dev/null || :
+    
+    # Set permissions (optional)
+    - /bin/chmod 755 $DEPLOYPATH
