@@ -1,0 +1,32 @@
+BWA
+TIME
+Supabase
+
+pass:
+Bwa1234!!!!####
+
+Cpanel
+Key
+id_rsa
+pass:
+y78DF=fkqLPw
+
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/bwabokzf/.ssh/id_rsa.
+Your public key has been saved in /home/bwabokzf/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:GB+OlpcoNfeIc8kdrJPb94Y4Ak75k8OR0z/KQtQoco8 
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|         .       |
+|      + ooo      |
+|    ..o&oX..     |
+|    .oO*Soo      |
+|     oE+*+.      |
+|     o =.+.o..   |
+|      . O.o.+..  |
+|         =oo o.  |
++----[SHA256]-----+
